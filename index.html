@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Blogging Website</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
 
   <link rel="stylesheet" href="../MyProject/assets/styles.css">
   <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
@@ -11,6 +12,22 @@
 </head>
 
 <body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach(function($el) {
+          $el.addEventListener('click', function() {
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
 
   <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
     <div class="container">
