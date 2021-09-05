@@ -206,3 +206,32 @@ a.navbar-item.is-active:hover {
 #search .button:focus {
     outline: 0.25rem solid white
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    
+    #blog #blog-card {
+        transform: scale(1);
+        margin-bottom: 5vmax !important;
+        padding-top: 50% !important
+    }
+    #blog #blog-card:hover {
+        transform: scale(1.025);
+        margin-bottom: 5vmax !important;
+        padding-top: 50% !important;
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25)
+    }
+    #blog #blog-card .image {
+        padding-top: 50% !important
+    }
+}
