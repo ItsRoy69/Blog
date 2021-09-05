@@ -209,12 +209,6 @@ a.navbar-item.is-active:hover {
 
 
 
-
-
-
-
-
-
 @media (max-width: 768px) {
     #blog #blog-card {
         transform: scale(1);
